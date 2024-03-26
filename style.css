@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --DARK_GRAYISH_BLUE: hsl(236, 13%, 42%);
+    --SOFT_ORANGE: hsl(35, 77%, 62%);
+    --VERY-DARK-BLUE: hsl(240, 100%, 5%);
+}
+
+body {
+    font-family: "Inter";
+}
+
+.link {
+    color: var(--DARK_GRAYISH_BLUE);
+    transition: 0.5ms color ease;
+}
+
+ul .link:hover {
+    color: var(--SOFT_ORANGE);
+}
+
+.new-articles img {
+    max-width: 120px;
+}
+
+.content h2 {
+    color: hsl(233, 8%, 79%);
+    font-size: 2em;
+}
+
+.content h3 {
+    transition: 500ms color ease-in;
+    cursor: pointer;
+}
+
+.content h3:hover {
+    color: var(--SOFT_ORANGE);
+}
+
+.button {
+    background-color: hsl(5, 85%, 63%);
+    padding: 1em 1.5em;
+    display: inline-block;
+    margin-top: 1.5em;
+    text-decoration: none;
+    color: hsl(36, 100%, 99%);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    transition: 0.5ms background-color ease-in;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+aside .article a {
+    transition: 0.5ms color ease !important;
+}
+
+aside .article a:hover {
+    color: var(--SOFT_ORANGE) !important;
+}
+
+.new-articles h5 {
+    transition: 0.5ms color ease-in;
+}
+.new-articles h5:hover {
+    color: var(--SOFT_ORANGE);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+    .new-articles{
+        max-height: 8.5rem;
+    }
+}
